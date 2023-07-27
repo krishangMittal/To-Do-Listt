@@ -1,0 +1,38 @@
+<%- include("partials/header.ejs") %>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>To-DO jas list</title>
+        <link rel="stylesheet" href="styles/index.css" />
+    </head>
+
+    <body>
+        <main>
+            <div id="heading">
+                <h1>
+                    WORK LIST
+                </h1>
+            </div>
+            <%  for(let i = 0 ; i < newListItem.length ; i++) { %>
+            <div class="item box">
+            <input type="checkbox" class="cbox4" value="fourth_checkbox"> <label for="cbox4"> 
+                <% if (locals.newListItem[i]) { %>
+                  <h1 class = "listItem"><%= newListItem[i] %></h1>
+                <% } %>
+            </label>
+            </div>
+            <% } %>
+            <div class="box">
+                <form class="item" action="/work" method="post">
+                    <input type="text" name="newItem" placeholder="New Item" autocomplete="off" />
+                    <button 27 type="submit" class="addButton">+</button>
+                </form>
+            </div>
+        </main>
+    </body>
+
+    </html>

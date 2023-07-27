@@ -1,0 +1,29 @@
+body {
+    background: #222;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+      helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+    color: hotpink;
+  }
+
+
+
+
+header ul { 
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 25px;
+  gap : 25px;
+  
+}
+
+.button1 {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color : pink;
+}
